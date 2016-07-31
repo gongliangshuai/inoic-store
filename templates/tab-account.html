@@ -1,0 +1,17 @@
+<ion-nav-bar class="bar-stable" id="kk" title="123">
+    <ion-nav-buttons side="left">
+          <img src="../img/ionic.png" class="img" />
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+      <a class="ion-qr-scanner qr" ng-click="doSomething()"></a>
+    </ion-nav-buttons>
+</ion-nav-bar>
+<ion-view view-title="Account">
+  <ion-content>
+    <ion-list>
+    <ion-toggle  ng-model="settings.enableFriends">
+        Enable Friends
+    </ion-toggle>
+    </ion-list>
+  </ion-content>
+</ion-view>
