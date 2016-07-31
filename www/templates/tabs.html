@@ -1,0 +1,45 @@
+<!--
+Create tabs with an icon and label, using the tabs-positive style.
+Each tab's child <ion-nav-view> directive will have its own
+navigation history that also transitions its views in and out.
+-->
+<ion-tabs class="tabs-icon-top tabs-color-active-positive">
+
+  <!-- Dashboard Tab -->
+  <ion-tab title="首页
+  	" icon-off="ion-ios-home-outline" icon-on="ion-ios-home" href="#/tab/home">
+    <ion-nav-view name="tab-home"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Chats Tab -->
+  <ion-tab title="分类" icon-off="ion-ios-keypad-outline" icon-on="ion-ios-keypad" href="#/tab/classify">
+    <ion-nav-view name="tab-classify"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Account Tab -->
+  <ion-tab title="发现" icon-off="ion-ios-paw-outline" icon-on="ion-ios-paw" href="#/tab/find">
+    <ion-nav-view name="tab-find"></ion-nav-view>
+  </ion-tab>
+  
+  <!-- Account Tab -->
+  <ion-tab title="购物车" icon-off="ion-ios-cart-outline" icon-on="ion-ios-cart" href="#/tab/cart">
+    <ion-nav-view name="tab-cart"></ion-nav-view>
+  </ion-tab>
+  
+  <!-- Account Tab -->
+  <ion-tab title="我的" icon-off="ion-ios-person-outline" icon-on="ion-ios-person" href="#/tab/my">
+    <ion-nav-view name="tab-my"></ion-nav-view>
+  </ion-tab>
+
+
+</ion-tabs>
+<script id="my-modal.html" type="text/ng-template">
+  <div class="modal">
+    <ion-header-bar >
+      <h1 class="title">我的模型标题</h1>
+    </ion-header-bar>
+    <ion-content>
+      Hello!
+    </ion-content>
+  </div>
+</script>

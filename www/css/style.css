@@ -1,0 +1,307 @@
+/* Empty. Add your own CSS if you like */
+
+body {
+	font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+	color: #666;
+}
+
+*:focus {
+	outline: none;
+}
+
+.loading-container .loading {
+	background-color:rgba(0, 0, 0, 0);
+}
+
+.img {
+	width: 33px;
+}
+
+.qr,
+.bell {
+	height: 33px;
+	width: 33px;
+	font-size: 33px;
+}
+
+.bar {
+	border-style: none;
+	border-bottom-width: 0px;
+	-webkit-border: none;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+#search {
+	width: 100%;
+}
+
+.search {
+	margin: 5px;
+	border-radius: 5px;
+	border: none;
+	border-radius: 5px;
+	padding: 0px 30px;
+	background-color: #FFF;
+	height: 34px;
+	line-height: 20px;
+	text-align: center;
+}
+
+.search>.left {
+	position: absolute;
+	left: 5px;
+	top: 0px;
+	line-height: 44px;
+	width: 30px;
+}
+
+.search>.right {
+	position: absolute;
+	right: 5px;
+	top: 0px;
+	line-height: 44px;
+	width: 30px;
+}
+
+#home {
+	background: #f5f5f5;
+}
+
+#header-home>.buttons {
+	margin: 0 3px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+#header-home>.buttons>a {
+	color: #FFFFFF;
+}
+
+#header-home>.title {
+	left: 48px;
+	right: 48px;
+	/*margin: 0 0px;*/
+}
+
+#header-home {
+	opacity: 1;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.adv {
+	background-color: #FFF;
+}
+
+.floor {
+	text-align: center;
+	background-color: #FFF;
+}
+
+.floor.nav>div img {
+	border-radius: 18px;
+}
+
+.floor.nav>div span {
+	display: block;
+	width: 100%;
+	color: #666;
+	font-size: 12px;
+}
+
+.btn {
+	font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+	border-width: 0px;
+	background-color: #FFF;
+	line-height: initial;
+}
+
+.btn:hover {
+	color: #444;
+	text-decoration: none;
+}
+
+.floor.seckill,
+.floor.new {
+	margin-top: 5px;
+}
+
+.floor.seckill>.header,
+.floor.new>.header {
+	height: 27px;
+	line-height: 27px;
+}
+
+.floor.seckill>.content {
+	width: 100%;
+	height: 180px;
+	border-top: 1px;
+	border-style: outset;
+}
+
+.floor.seckill>.header>.left {
+	float: left;
+	padding-left: 10px;
+	color: #E42112;
+}
+
+.floor.seckill>.header>.right {
+	float: right;
+	font-size: 12px;
+}
+
+.floor.seckill .list {
+	height: 180px;
+	width: 600px;
+	overflow-y: visible;
+	display: block;
+}
+
+.floor.seckill .list>li {
+	float: left;
+	height: 180px;
+	width: 120px;
+}
+
+
+/*new*/
+
+.floor.new>.content {
+	width: 100%;
+	border-top: 1px;
+	border-style: outset;
+}
+
+.floor.new>.header>.left {
+	float: left;
+	padding-left: 10px;
+	color: #262626;
+}
+
+.floor.new>.header>.right {
+	float: right;
+	font-size: 12px;
+}
+
+.floor.new .list {
+	width: 100%;
+	display: block;
+	overflow: auto;
+}
+
+.floor.new .list>li {
+	float: left;
+	height: 180px;
+	width: 33.3%;
+	background-color: #FFF;
+	border-bottom: 1px;
+	border-right: 1px;
+	border-style: inset;
+}
+
+.floor.new .list>li:nth-child(3n-1),
+.floor.new .list>li:nth-child(3n+1) {
+	#border-right: 1px inset #e0e0e0;
+}
+
+
+/*classify*/
+
+#header-classify>.buttons {
+	margin: 0 3px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+#header-classify>.buttons>a {
+	color: #888;
+}
+
+.list>.goods {
+	float: left;
+	height: 180px;
+	width: 33.3%;
+	background-color: #FFF;
+	border-bottom: 1px;
+	border-right: 1px;
+	border-style: inset;
+}
+
+.loading svg {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 100px;
+	width: 100px;
+}
+
+#.spinner {
+    stroke: #E02B2B;
+    fill: #1A4896;
+}
+.spinner svg {
+    #width: 80px;
+    #height: 80px;
+}
+
+
+/*个人中心*/
+.my .head{
+	width: 100%;
+    height: 120px;
+    margin-top: 0rem;
+    background: url(http://static.m.jd.com/home/images/myJd/headbg.png) no-repeat;
+    background-size: cover;
+}
+    
+.my .head-img{
+	width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    text-align: center;
+    position:absolute;
+    padding: 6px 15px;
+}
+
+.my .head-info{
+	text-align: left;
+    padding: 10px 80px;
+}
+
+.my .head-address{
+	text-align: left;
+    padding: 10px 40px;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    text-align: right;
+}
+
+.my .head-img img{
+	width: 56px;
+    height: 56px;
+    border-radius: 56px;
+    top: 2px;
+    position: relative;
+}
+    
+.my .nav{
+	height: 40px;
+}
+    
+.my .nav ul{
+	display: -webkit-box;
+	height: 40px;
+}
+
+.my .nav ul li{
+	-webkit-box-flex: 1; 
+	text-align: center;
+	line-height: 40px;
+	background-color: rgba(0,0,2,0.2);
+    color: #FFF;
+    margin: 0.5px;
+}

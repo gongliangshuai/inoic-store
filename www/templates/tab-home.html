@@ -1,0 +1,109 @@
+
+<ion-view id="home" hide-nav-bar="true" title='订货系统' ng-controller="HomeView">
+	<ion-header-bar align-title="left" id="header-home" ng-style="headerStyle">
+		<div class="buttons">
+			<a ng-click="test1()" class="ion-qr-scanner qr" ng-click="doSomething()"></a>
+		</div>
+		<div class="title" style="left: 48px; right: 48px;">
+			<div ng-click="test2()" class="search">
+				<span class="left ion-ios-search"></span>
+				<input type="text" id="search" placeholder="太太乐">
+				<span class="right ion-ios-mic-outline"></span>
+			</div>
+		</div>
+		<div class="buttons">
+			<a ng-click="test3()" class="ion-android-notifications-none bell" ng-click="doSomething()"></a>
+		</div>
+	</ion-header-bar>
+	<ion-content style="top:0px" id="home-content" ng-switch="test2(this)" delegate-handle="content" onScroll="console.log(window.$scope.position())" n="window.$scope.position()">
+		<ion-refresher on-refresh="doRefresh()" pulling-text="下拉刷新" refreshing-text="正在刷新!" refreshing-icon="ion-loading-b">
+		</ion-refresher>
+		<ion-slide-box class="adv" on-slide-changed="slideHasChanged($index)" does-continue="true" slide-interval="5000" auto-play="true">
+			<ion-slide>
+				<div class="box blue">
+					<img ng-click="nextSlide()" src="http://m.360buyimg.com/mobilecms/s720x350_jfs/t2167/14/2106930636/74528/371b7586/5698ff60N25aaa8fd.jpg" style="width: 100%;" />
+				</div>
+			</ion-slide>
+			<ion-slide>
+				<div class="box yellow">
+					<img ng-click="nextSlide()" src="http://m.360buyimg.com/mobilecms/s720x350_jfs/t2257/17/2095650997/99818/5c89bda0/569c871aN3aa6b45d.jpg" style="width: 100%;" />
+				</div>
+			</ion-slide>
+			<ion-slide>
+				<div class="box pink">
+					<img ng-click="nextSlide()" src="http://m.360buyimg.com/mobilecms/s720x350_jfs/t1894/350/2002928151/38539/6f2ffb5f/569cbd75N95179a39.jpg" style="width: 100%;" />
+				</div>
+			</ion-slide>
+		</ion-slide-box>
+		<div class="row floor nav">
+			<div class="col">
+				<button ng-click="test11()" class="button btn"><img width="45" height="45" src="http://pic.yupoo.com/gongliangshuai_v/FgIfeUAv/RyuQ5.jpg"><span>抢积分</span></button>
+			</div>
+			<div class="col">
+				<button ng-click="test12()" class="button btn"><img width="45" height="45" src="http://pic.yupoo.com/gongliangshuai_v/FgIffbyf/viSsu.jpg"><span>排行榜</span></button>
+			</div>
+			<div class="col">
+				<button ng-click="test13()" class="button btn"><img width="45" height="45" src="http://pic.yupoo.com/gongliangshuai_v/FgIfePrc/2hu7n.jpg"><span>品牌馆</span></button>
+			</div>
+			<div class="col">
+				<button ng-click="test14()" class="button btn"><img width="45" height="45" src="http://pic.yupoo.com/gongliangshuai_v/FgIfeGtR/y2PNB.jpg"><span>我常买</span></button>
+			</div>
+		</div>
+		<div class="floor seckill">
+			<div class="header">
+				<div class="left"><i class="ion-ios-alarm-outline"></i> 限时秒杀</div>
+				<div class="right" ng-click="openModal()">更多秒杀 <i class="ion-chevron-right"></i></div>
+			</div>
+			<div class="content">
+				<ion-scroll id="seckill" zooming="false" locking="true" direction="x" scrollbar-x="false" style="width: 100%; height: 180px">
+					<ul class="list">
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+					</ul>
+				</ion-scroll>
+			</div>
+
+		</div>
+
+		<div class="floor new">
+			<div class="header">
+				<div class="left"><i class="ion-ios-box-outline"></i> 新品上市</div>
+				<div class="right">更多新品 <i class="ion-chevron-right"></i></div>
+			</div>
+			<div class="content">
+
+				<ul class="list">
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+				</ul>
+			</div>
+
+		</div>
+
+		<div class="floor new">
+			<div class="header">
+				<div class="left"><i class="ion-ios-flame-outline"></i> 精品推荐</div>
+				<div class="right">更多精品 <i class="ion-chevron-right"></i></div>
+			</div>
+			<div class="content">
+
+				<ul class="list">
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+				</ul>
+			</div>
+
+		</div>
+
+	</ion-content>
+</ion-view>
+

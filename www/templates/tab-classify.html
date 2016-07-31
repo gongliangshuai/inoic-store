@@ -1,0 +1,109 @@
+<ion-header-bar align-title="left" id="header-classify" class="bar-stable">
+	<div class="buttons">
+		<a ng-click="toggleLeft()" class="ion-qr-scanner qr" ng-click="doSomething()"></a>
+	</div>
+	<div class="title" style="left: 48px; right: 48px;">
+		<div ng-click="test2()" class="search">
+			<span class="left ion-ios-search"></span>
+			<input type="text" id="search" placeholder="太太乐">
+			<span class="right ion-ios-mic-outline"></span>
+		</div>
+	</div>
+	<div class="buttons">
+		<a ng-click="toggleRight()" class="ion-android-notifications-none bell" ng-click="doSomething()"></a>
+	</div>
+</ion-header-bar>
+<ion-view view-title="分类" hide-nav-bar="true">
+	<ion-side-menus>
+		<!-- 中间内容 -->
+		<ion-side-menu-content ng-controller="ClassifyCtrl" class="has-header" style="padding-top: 44px;">
+			<ion-content>
+
+				<ul class="list">
+					<li class="goods" ng-repeat="item in items">{{item}}
+						<a class="button button-small" ng-click="addItem($index)">
+             Add
+          </a>
+						<a class="button button-small" ng-click="items.splice($index, 1)">
+            Remove
+          </a>
+					</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					
+					<ion-spinner icon="dots" style="stroke: #E02B2B;fill: #1A4896;"></ion-spinner>
+					<ion-spinner icon="lines"></ion-spinner>
+
+				</ul>
+				<ion-infinite-scroll ng-if="true" icon="ion-load-c" on-infinite="loadMore()" distance="1%">
+				</ion-infinite-scroll>
+			</ion-content>
+			<ion-content scroll="false" class="loading" ng-class="{true:'show',false:'hide'}[loading]">
+
+				<ion-spinner icon="ios" class="loading"></ion-spinner>
+
+			</ion-content>
+		</ion-side-menu-content>
+
+		<!-- 左侧菜单 -->
+		<ion-side-menu side="left">
+			<ion-content class="has-header">
+				<ion-list>
+					<ion-item nav-clear menu-close href="#/app/search">
+						Search
+					</ion-item>
+					<ion-item nav-clear menu-close href="#/app/browse">
+						Browse
+					</ion-item>
+					<ion-item nav-clear menu-close href="#/app/playlists">
+						Playlists
+					</ion-item>
+				</ion-list>
+			</ion-content>
+		</ion-side-menu>
+		</ion-side-menu>
+
+		<!-- 右侧菜单 -->
+		<ion-side-menu side="right">
+			<ion-content class="has-header">
+				<ion-list>
+					<ion-item nav-clear menu-close href="#/app/search">
+						Search
+					</ion-item>
+					<ion-item nav-clear menu-close href="#/app/browse">
+						Browse
+					</ion-item>
+					<ion-item nav-clear menu-close href="#/app/playlists">
+						Playlists
+					</ion-item>
+				</ion-list>
+			</ion-content>
+		</ion-side-menu>
+	</ion-side-menus>
+</ion-view>
